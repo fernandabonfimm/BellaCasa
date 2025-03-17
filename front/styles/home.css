@@ -1,0 +1,21 @@
+.cards-div {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 16px;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+}
+
+.cards-div::-webkit-scrollbar {
+  display: none;
+}
+
+.cards-div > * {
+  flex: 0 0 auto;
+  width: 80%; /* Ajuste para melhor encaixe dos cards */
+  max-width: 300px;
+  scroll-snap-align: start;
+}
