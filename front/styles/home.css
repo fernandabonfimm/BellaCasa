@@ -1,6 +1,6 @@
 .cards-div {
   display: flex;
-  gap: 16px;
+  gap: 30px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding: 16px;
@@ -18,4 +18,8 @@
   width: 80%; /* Ajuste para melhor encaixe dos cards */
   max-width: 300px;
   scroll-snap-align: start;
+}
+
+.div-banners{
+  width: 100%;
 }

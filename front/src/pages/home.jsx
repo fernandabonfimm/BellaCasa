@@ -4,6 +4,11 @@ import Base from "../components/base";
 import CardHome from "../components/cardHome";
 import { FaTruck, FaHeart, FaShoppingBasket } from "react-icons/fa";
 import { MdMoneyOffCsred, MdLocalOffer } from "react-icons/md";
+import BannerCarousel from "../components/banners";
+import Banner1 from "../assets/images/banner1.png";
+import Banner2 from "../assets/images/banner2.png";
+
+const banners = [Banner1, Banner2];
 
 export default function Home() {
   const sliderRef = React.useRef(null);
@@ -55,6 +60,9 @@ export default function Home() {
           title="Ame seu lar"
           subtitle="com nossas ofertas"
         />
+      </div>
+      <div className="div-banners">
+        <BannerCarousel images={banners} />
       </div>
     </Base>
   );
