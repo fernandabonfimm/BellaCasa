@@ -5,6 +5,7 @@ const { Header, Content, Footer } = Layout;
 import { MenuOutlined } from "@ant-design/icons";
 import Logo from "../assets/images/logoHBC2.png";
 import { Divider } from "antd";
+import { useNavigate } from "react-router-dom";
 
 const menuItems = [
   "Cozinha",
@@ -17,6 +18,7 @@ const menuItems = [
 ];
 
 const Base = ({ children }) => {
+  const navigation = useNavigate();
   const [open, setOpen] = React.useState(false);
   return (
     <div className="base">
@@ -31,7 +33,7 @@ const Base = ({ children }) => {
           icon={<MenuOutlined style={{display: 'flex'}} />}
           onClick={() => setOpen(true)}
         />
-        <img src={Logo} alt="Logo" />
+        <img src={Logo} alt="Logo" style={{cursor: 'pointer'}} onClick={() => navigation("/")}/>
       </Header>
 
       <Drawer
@@ -66,10 +68,9 @@ const Base = ({ children }) => {
       <Footer className="footer">
         <Divider style={{ background: "#e4e8e2" }} />
         <div className="itens-footer">
-          <button>Parceiros</button>
-          <button>Política de Privacidade</button>
-          <button>Termos de Uso</button>
-          <button>Contato</button>
+          <button onClick={() => navigation("/privacy")}>Política de Privacidade</button>
+          <Divider type="vertical" style={{ background: "#e4e8e2", height: "30px", }} />
+          <button onClick={() => navigation("/contact")}>Contato</button>
         </div>
         <Divider style={{ background: "#e4e8e2" }} />
         <div className="details-footer">

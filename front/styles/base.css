@@ -27,10 +27,14 @@
     width: 150px;
     height: 90px;
 }
+.base{
+    background-color: white;
 
+}
 .container-allPages{
     background-color: white;
     min-height: 100vh;
+    margin-bottom: 30px;
 }
 .header_itens{
     display: flex;
@@ -108,10 +112,11 @@
 }
 .itens-footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     padding: 16px;
+    gap: 24px;
 }
 
 .itens-footer button {

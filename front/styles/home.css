@@ -23,3 +23,177 @@
 .div-banners{
   width: 100%;
 }
+
+.pp_main{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 30px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.pp_main h3{
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+}
+
+.pp_main span{
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(53, 53, 53);
+}
+
+.base_cc{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.base_tt_cc{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.bg_grenn{
+  background-color: #1e8803;
+}
+.base_tt_cc h2{
+  font-size: 24px;
+  color: white;
+  font-weight: 800;
+}
+
+.base_tt_cc h3{
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+
+
+.plans-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.plan-card {
+  width: 45%;
+  min-width: 280px;
+  height: 100%;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+.plan-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  flex-grow: 1; /* Garante que os cards tenham mesma altura */
+}
+
+.plan-features li {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.check-icon {
+  color: #28a745;
+  margin-right: 8px;
+}
+
+.plan-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e74c3c;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.plan-button {
+  background-color: #28a745;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  animation: pulse 1.5s infinite;
+  width: 100%;
+}
+.color_p1{
+  color: #555;
+
+}
+.color_p2{
+  color: #15a793;
+}
+.borda_p1{
+  border: 4px solid #555;
+  box-shadow: 0 0 10px rgba(102, 102, 102, 0.5);
+}
+.borda_p2{
+  border: 4px solid #15a793;
+  box-shadow: 0 20px 40px rgba(7, 162, 173, 0.5);
+}
+.plan-button:hover {
+  background-color: #218838;
+}
+
+.div_garantia{
+  background-color: rgb(185, 159, 9);
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(40, 167, 69, 0.7);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+  }
+}
+
+@media (max-width: 768px) {
+  .plans-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan-card {
+    width: 100%;
+  }
+}
