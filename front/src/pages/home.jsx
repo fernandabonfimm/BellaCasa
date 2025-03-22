@@ -7,7 +7,8 @@ import { MdMoneyOffCsred, MdLocalOffer } from "react-icons/md";
 import BannerCarousel from "../components/banners";
 import Banner1 from "../assets/images/banner1.png";
 import Banner2 from "../assets/images/banner2.png";
-
+import Cozinha1 from "../components/cozinha/cozinha1";
+import Quarto1 from "../components/quarto/quarto1";
 const banners = [Banner1, Banner2];
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
   const handleTouchEnd = () => {
     sliderRef.current.startX = null;
   };
+
   return (
     <Base>
       <div
@@ -64,6 +66,8 @@ export default function Home() {
       <div className="div-banners">
         <BannerCarousel images={banners} />
       </div>
+      <Cozinha1 />
+      <Quarto1 />
     </Base>
   );
 }

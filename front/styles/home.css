@@ -136,7 +136,27 @@
   text-decoration: underline;
   margin-top: 10px;
 }
-
+.see-all-button{
+  background-color: #1e8803;
+  color: white;
+  border-radius: 8px;
+  border: 1px solid #28a745;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 24px;
+  margin-top: 20px;
+}
+.see-all-button:hover{
+  background-color: #1e8803 !important;
+  color: white !important;
+  border-radius: 8px;
+  border: 1px solid #1e8803 !important;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 24px;
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(78, 165, 83, 0.12) !important;
+}
 .plan-button {
   background-color: #28a745;
   color: white;
@@ -172,6 +192,28 @@
 .div_garantia{
   background-color: rgb(185, 159, 9);
 }
+
+.items_container{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 12px;
+  padding: 30px;
+  margin-top: 20px;
+}
+.items_container h3{
+  font-size: 24px;
+  color: black;
+  font-weight: 700;
+}
+.carousel-container_mobile{
+  display: none;
+}
+.desktopitens{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -195,5 +237,24 @@
 
   .plan-card {
     width: 100%;
+  }
+  .see-all-button{
+    background-color: #1e8803;
+    width: 100%;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid #28a745;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 24px;
+    margin-top: 20px;
+  }
+  .carousel-container_mobile{
+    width: 100%;
+    visibility: visible;
+    display: contents;
+  }
+  .desktopitens{
+    display: none;
   }
 }

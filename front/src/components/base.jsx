@@ -24,7 +24,7 @@ const Base = ({ children }) => {
     <div className="base">
       <Header className="navbar_action">
         <span className="NV_title">
-          Móveis únicos com até <strong>20% OFF</strong> em todo o site da loja!
+          Móveis únicos com até <strong>80% OFF</strong> em todo o site da loja!
         </span>
       </Header>
       <Header className="header-logo">
@@ -69,7 +69,7 @@ const Base = ({ children }) => {
         <Divider style={{ background: "#e4e8e2" }} />
         <div className="itens-footer">
           <button onClick={() => navigation("/privacy")}>Política de Privacidade</button>
-          <Divider type="vertical" style={{ background: "#e4e8e2", height: "30px", }} />
+          {/* <Divider type="vertical" style={{ background: "#e4e8e2", height: "30px", }} /> */}
           <button onClick={() => navigation("/contact")}>Contato</button>
         </div>
         <Divider style={{ background: "#e4e8e2" }} />
