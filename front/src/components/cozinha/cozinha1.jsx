@@ -5,6 +5,10 @@ import Pote from "../../assets/images/items/potesd.png";
 import Pote2 from "../../assets/images/items/potes2.png";
 import Garfo from "../../assets/images/items/garfo1.png";
 import Garfo2 from "../../assets/images/items/garfo2.png";
+import Prato from "../../assets/images/items/pratoT.png";
+import Prato2 from "../../assets/images/items/pratoT2.png";
+import Torneira from "../../assets/images/items/torneiraD.png";
+import Torneira2 from "../../assets/images/items/TorneiraD2.png";
 
 import { Carousel, Button } from "antd";
 
@@ -16,7 +20,7 @@ export default function Cozinha1() {
       src2: Pote2,
       title: "Kit 3 Potes Herméticos de Vidro com Tampa e Colher de Bambu",
       originalPrice: "De: R$ 249,00",
-      price: "Por: R$32,90",
+      price: "Por: R$ 32,90",
       vendidos: "146 Vendido(s)",
       frete: "Frete grátis",
       description: "Á vista no pix com desconto de 5% ou até 10x no cartão",
@@ -26,30 +30,30 @@ export default function Cozinha1() {
       src2: Garfo2,
       title: "Kit 24 peças de Talheres de Luxo Linha Ouro",
       originalPrice: "De: R$ 149,90",
-      price: "Por: R$26,90",
+      price: "Por: R$ 26,90",
       vendidos: "3,6mil Vendido(s)",
       frete: "Frete grátis",
       description: "Á vista no pix com desconto de 5% ou até 5x no cartão",
     },
     {
-      src: Garfo,
-      src2: Garfo2,
-      title: "Kit 24 peças de Talheres de Luxo Linha Ouro",
-      originalPrice: "De: R$ 149,90",
-      price: "Por: R$26,90",
-      vendidos: "3,6mil Vendido(s)",
+      src: Prato,
+      src2: Prato2,
+      title: "Jogo de Pratos Sobremesa Cristal Luxo Transparente",
+      originalPrice: "De: R$ 129,99",
+      price: "Por: R$ 65,90",
+      vendidos: "83 Vendido(s)",
       frete: "Frete grátis",
-      description: "Á vista no pix com desconto de 5% ou até 5x no cartão",
+      description: "Á vista no pix com desconto de 5% ou até 12x no cartão",
     },
     {
-      src: Garfo,
-      src2: Garfo2,
-      title: "Kit 24 peças de Talheres de Luxo Linha Ouro",
-      originalPrice: "De: R$ 149,90",
-      price: "Por: R$26,90",
-      vendidos: "3,6mil Vendido(s)",
+      src: Torneira,
+      src2: Torneira2,
+      title: "Torneira de Luxo Dourada para cozinha gourmet",
+      originalPrice: "De: R$ 419,99",
+      price: "Por: R$ 229,99",
+      vendidos: "93 Vendido(s)",
       frete: "Frete grátis",
-      description: "Á vista no pix com desconto de 5% ou até 5x no cartão",
+      description: "Á vista no pix com desconto de 5% ou até 12x no cartão",
     },
     // Adicione mais itens aqui
   ];

@@ -228,8 +228,30 @@
     box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
   }
 }
+.media_item {
+  width: 300px; /* Ajuste conforme necessário */
+  height: 600px; /* Ajuste conforme necessário */
+  object-fit: cover; /* Mantém o aspecto visual sem distorções */
+  border-radius: 6px;
+}
 
+.container_avaliacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  flex-direction: row;
+  gap: 12px;
+  flex-wrap: wrap;
+}
 @media (max-width: 768px) {
+  .container_avaliacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+  }
   .plans-container {
     flex-direction: column;
     align-items: center;

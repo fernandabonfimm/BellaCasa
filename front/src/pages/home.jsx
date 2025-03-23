@@ -12,6 +12,7 @@ import Quarto1 from "../components/quarto/quarto1";
 const banners = [Banner1, Banner2];
 import GuaranteeSection from "../components/garantia";
 import WhatsappSection from "../components/whatsapp";
+import Avaliacoes from "../components/avaliacoes";
 
 export default function Home() {
   const sliderRef = React.useRef(null);
@@ -72,6 +73,7 @@ export default function Home() {
       <GuaranteeSection />
       <Quarto1 />
       <WhatsappSection />
+      <Avaliacoes />
     </Base>
   );
 }
