@@ -19,6 +19,36 @@ export default function Quarto1() {
       frete: "Frete grátis",
       description: "Á vista no pix com desconto ou até 12x no cartão",
     },
+    {
+      src: Cama1,
+      src2: Cama,
+      title: "Kit Cobre Leito Turin 14 peças com 180 Fios - Premium",
+      originalPrice: "De: R$ 629,90",
+      price: "Por: R$247,90",
+      vendidos: "1,1mil Vendido(s)",
+      frete: "Frete grátis",
+      description: "Á vista no pix com desconto ou até 12x no cartão",
+    },
+    {
+      src: Cama1,
+      src2: Cama,
+      title: "Kit Cobre Leito Turin 14 peças com 180 Fios - Premium",
+      originalPrice: "De: R$ 629,90",
+      price: "Por: R$247,90",
+      vendidos: "1,1mil Vendido(s)",
+      frete: "Frete grátis",
+      description: "Á vista no pix com desconto ou até 12x no cartão",
+    },
+    {
+      src: Cama1,
+      src2: Cama,
+      title: "Kit Cobre Leito Turin 14 peças com 180 Fios - Premium",
+      originalPrice: "De: R$ 629,90",
+      price: "Por: R$247,90",
+      vendidos: "1,1mil Vendido(s)",
+      frete: "Frete grátis",
+      description: "Á vista no pix com desconto ou até 12x no cartão",
+    },
     // Adicione mais itens aqui
   ];
   return (

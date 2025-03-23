@@ -31,6 +31,26 @@ export default function Cozinha1() {
       frete: "Frete grátis",
       description: "Á vista no pix com desconto de 5% ou até 5x no cartão",
     },
+    {
+      src: Garfo,
+      src2: Garfo2,
+      title: "Kit 24 peças de Talheres de Luxo Linha Ouro",
+      originalPrice: "De: R$ 149,90",
+      price: "Por: R$26,90",
+      vendidos: "3,6mil Vendido(s)",
+      frete: "Frete grátis",
+      description: "Á vista no pix com desconto de 5% ou até 5x no cartão",
+    },
+    {
+      src: Garfo,
+      src2: Garfo2,
+      title: "Kit 24 peças de Talheres de Luxo Linha Ouro",
+      originalPrice: "De: R$ 149,90",
+      price: "Por: R$26,90",
+      vendidos: "3,6mil Vendido(s)",
+      frete: "Frete grátis",
+      description: "Á vista no pix com desconto de 5% ou até 5x no cartão",
+    },
     // Adicione mais itens aqui
   ];
   return (

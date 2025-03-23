@@ -93,7 +93,7 @@
 
 .card-item {
   border: none;
-  width: 340px;
+  width: 300px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -101,7 +101,7 @@
 }
 
 .content_img_CI {
-  width: 300px;
+  width: 270px;
   overflow: hidden;
   border-radius: 8px;
   display: inline-block;
@@ -167,10 +167,10 @@
 .tag {
   padding-top: 6px;
   padding-bottom: 6px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 8px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bold;
 }
 .red{
@@ -201,6 +201,70 @@
   }
 }
 
+.whatsapp-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: transform 1.2s ease-in-out;
+}
+
+.whatsapp-container.active {
+  background: linear-gradient(120deg, #008000, #ffffff, #11be11);
+  background-size: 300% 300%;
+  animation: goldenWave 6s infinite linear;
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(25, 179, 5, 0.3);
+}
+
+.whatsapp-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 40px;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 40px;
+}
+
+.whatsapp-card h3{
+  font-size: 24px;
+  font-weight: bold;
+  color: #1d1d1d;
+}
+
+.whatsapp-card p{
+  font-size: 14px;
+  font-weight: 600;
+  color: #1d1d1d;
+  text-align: center;
+}
+
+.whatsapp-card span{
+  font-size: 14px;
+  font-weight: 700;
+  color: #00a025;
+  text-align: center;
+}
+.call-center-image{
+  width: 500px;
+  height: 100%;
+}
+.whats-button {
+  background-color: #00a025;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  animation: pulse 1.5s infinite;
+  width: 50%;
+}
 .guarantee-container {
   display: flex;
   justify-content: center;
@@ -268,12 +332,15 @@
 
 h2 {
   font-size: 24px;
-  color: #333;
+  font-weight: bold;
+  color: #1d1d1d;
 }
 
 p {
-  font-size: 16px;
-  color: #555;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  color: #1d1d1d;
 }
 
 .product-image {
@@ -295,6 +362,7 @@ p {
   opacity: 1;
   transform: translateY(0) rotate(0);
 }
+
 
 @media (max-width: 768px) {
   .content {

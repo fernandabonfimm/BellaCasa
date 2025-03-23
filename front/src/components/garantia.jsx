@@ -40,9 +40,9 @@ const GuaranteeSection = () => {
           <div className="medal-container">
             <img src={Medalha} alt="medalha" />
           </div>
-          <h2>Garantia de 7 Dias!</h2>
+          <h2 style={{fontWeight: 'bold'}}>Garantia de 7 Dias!</h2>
           <p>
-            Experimente sem medo! Se não gostar, devolvemos seu dinheiro sem
+            Experimente sem medo! Se não gostar, seu dinheiro é devolvido sem
             burocracia.
           </p>
         </Card>
