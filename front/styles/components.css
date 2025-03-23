@@ -188,6 +188,132 @@
   background-color: #caffd5;
   color: #0fe43d;
 }
+
+@keyframes goldenWave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.guarantee-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: transform 1.2s ease-in-out;
+}
+
+.guarantee-container.active {
+  background: linear-gradient(120deg, #daa520, #ffffff, #b8860b);
+  background-size: 300% 300%;
+  animation: goldenWave 6s infinite linear;
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(179, 153, 5, 0.3);
+}
+
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.guarantee-card {
+  text-align: center;
+  max-width: 400px;
+  padding: 0px;
+  border-radius: 12px;
+  border: none;
+  background: transparent;
+  transition: transform 1.2s ease-in-out;
+}
+
+.medal-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  width: 250px;
+  transition: transform 1.2s ease-in-out;
+}
+
+.medal-icon {
+  font-size: 90px;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+}
+
+.medal-number {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  position: absolute;
+  z-index: 2;
+}
+
+.guarantee-container.active .medal-container {
+  transform: scale(1.2);
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+}
+
+.product-image {
+  width: 300px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+}
+
+.poltrona {
+  transform: rotate(-10deg);
+}
+
+.utensilio {
+  transform: rotate(10deg);
+}
+
+.guarantee-container.active .product-image {
+  opacity: 1;
+  transform: translateY(0) rotate(0);
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .product-image {
+    width: 200px;
+  }
+
+  .medal-container {
+    width: 180px;
+  }
+
+  .guarantee-card {
+    max-width: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   .carousel-slide {
     width: 100%;

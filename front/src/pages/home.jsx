@@ -10,6 +10,7 @@ import Banner2 from "../assets/images/banner2.png";
 import Cozinha1 from "../components/cozinha/cozinha1";
 import Quarto1 from "../components/quarto/quarto1";
 const banners = [Banner1, Banner2];
+import GuaranteeSection from "../components/garantia";
 
 export default function Home() {
   const sliderRef = React.useRef(null);
@@ -67,6 +68,7 @@ export default function Home() {
         <BannerCarousel images={banners} />
       </div>
       <Cozinha1 />
+      <GuaranteeSection />
       <Quarto1 />
     </Base>
   );

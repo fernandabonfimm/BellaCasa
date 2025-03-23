@@ -23,17 +23,37 @@ const Base = ({ children }) => {
   return (
     <div className="base">
       <Header className="navbar_action">
-        <span className="NV_title">
-          Móveis únicos com até <strong>80% OFF</strong> em todo o site da loja!
-        </span>
+        <div className="marquee">
+          <div className="marquee-content">
+            <span>
+              Móveis únicos com até <strong>80% OFF</strong> em todo o site da
+              loja!
+            </span>
+            <span className="dot">•</span>
+            <span>Frete grátis para compras acima de R$ 299!</span>
+            <span className="dot">•</span>
+            <span>Ame seu lar, pagando barato!</span>
+            <span className="dot">•</span>
+            <span>Preços exclusivos somente aqui!</span>
+            <span className="dot">•</span>
+            <span>7 dias de garantia em todos os produtos</span>
+            <span className="dot">•</span>
+            <span>Loja segura e com boas avaliações</span>
+          </div>
+        </div>
       </Header>
       <Header className="header-logo">
         <Button
           className="menu-button"
-          icon={<MenuOutlined style={{display: 'flex'}} />}
+          icon={<MenuOutlined style={{ display: "flex" }} />}
           onClick={() => setOpen(true)}
         />
-        <img src={Logo} alt="Logo" style={{cursor: 'pointer'}} onClick={() => navigation("/")}/>
+        <img
+          src={Logo}
+          alt="Logo"
+          style={{ cursor: "pointer" }}
+          onClick={() => navigation("/")}
+        />
       </Header>
 
       <Drawer
@@ -68,7 +88,9 @@ const Base = ({ children }) => {
       <Footer className="footer">
         <Divider style={{ background: "#e4e8e2" }} />
         <div className="itens-footer">
-          <button onClick={() => navigation("/privacy")}>Política de Privacidade</button>
+          <button onClick={() => navigation("/privacy")}>
+            Política de Privacidade
+          </button>
           {/* <Divider type="vertical" style={{ background: "#e4e8e2", height: "30px", }} /> */}
           <button onClick={() => navigation("/contact")}>Contato</button>
         </div>
